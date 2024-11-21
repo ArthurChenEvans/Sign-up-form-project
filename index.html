@@ -18,36 +18,42 @@
         </p>
         <form action="/" method="POST">
             <fieldset>
-                <legend>Let's do this!</legend>
+                <h2>Let's do this!</h2>
 
-                <div class="form_text_input">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
+                <div class="input_container">
+                    <div class="form_text_input">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
+                    </div>
+    
+                    <div class="form_text_input">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
+                    </div>
                 </div>
 
-                <div class="form_text_input">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
+                <div class="input_container">
+                    <div class="form_text_input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form_text_input">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="^\+?[1-9]\d{0,3}[-.\s]?(\(?\d{1,4}\)?[-.\s]?)*\d{1,4}$" required>
+                    </div>
                 </div>
 
-                <div class="form_text_input">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form_text_input">
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" id="phone_number" name="phone_number" pattern="^\+?[1-9]\d{0,3}[-.\s]?(\(?\d{1,4}\)?[-.\s]?)*\d{1,4}$" required>
-                </div>
-
-                <div class="form_text_input">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required minlength="8">
-                </div>
-
-                <div class="form_text_input">
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
+                <div class="input_container">
+                    <div class="form_text_input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </div>
+    
+                    <div class="form_text_input">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
+                    </div>
                 </div>
             </fieldset>
 

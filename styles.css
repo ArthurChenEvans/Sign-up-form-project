@@ -56,6 +56,104 @@ h1 > img {
 }
 
 main {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 60%;
 }
 
+main > p:first-child {
+    margin-top: 15%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main > p {
+    padding: 2rem;
+}
+
+p > span {
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: none;
+    box-shadow: 5px 5px 10px rgb(176, 174, 174);
+    padding: 0.7rem 2rem 2rem 2rem;
+}
+
+.input_container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.form_text_input {
+    width: 48%;
+    color: rgb(54, 69, 79);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form_text_input > input {
+    border-color: lightgray;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.form_text_input > input:focus {
+    border: solid blue 1px;
+    box-shadow: 2px 2px 5px gray;
+    outline: none;
+}
+
+.form_text_input > input:user-invalid {
+    border-color: red;
+}
+
+button {
+    background-color: rgb(132, 201, 244);
+    margin: 20px;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px slategray;
+}
+
+button:hover {
+    background-color: rgb(133, 143, 234);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+main > p:last-child {
+    padding-top: 1rem;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+main > p:last-child > a {
+    color: rgb(132, 201, 244);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main > p:last-child > a:hover {
+    color: rgb(133, 143, 234);
+}
