@@ -13,7 +13,9 @@
 
 body {
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    min-height: 100vh;
+    align-items: stretch;
 }
 
 aside {
@@ -22,6 +24,8 @@ aside {
     color: white;
     background-image: url('assets/images/background.png');
     width: 40%;
+    min-height: 100%;
+    height: auto;
 }
 
 aside > p {
@@ -58,6 +62,7 @@ h1 > img {
 main {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 60%;
+    height: 100%;
 }
 
 main > p:first-child {
@@ -156,4 +161,9 @@ main > p:last-child > a {
 
 main > p:last-child > a:hover {
     color: rgb(133, 143, 234);
+}
+
+.invalid-text {
+    color: red;
+    letter-spacing: 1px;
 }
