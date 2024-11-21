@@ -1,7 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'NorseBold';
     src: url('assets/fonts/Norse-Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    position: relative;
+    font-family: 'NorseBold', sans-serif;
+    color: white;
+    background-image: url('assets/images/background.png');
+    width: 40%;
+}
+
+aside > p {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+aside > p > a {
+    color: white;
+}
+
+aside > h1 {
+    position: absolute;
+    display: block;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-content: center;
+    font-size: calc(150px - calc(150px * 0.05));
+    width: 100%;
+    top: 20%;
+}
+
+h1 > img {
+    display: inline-block;
+    text-align: center;
+    height: calc(150px - calc(150px * 0.3));
+}
+
+main {
+    width: 60%;
 }
 
